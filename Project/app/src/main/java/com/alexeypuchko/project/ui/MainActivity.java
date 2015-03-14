@@ -1,8 +1,9 @@
-package com.alexeypuchko.project;
+package com.alexeypuchko.project.ui;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.alexeypuchko.project.R;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
