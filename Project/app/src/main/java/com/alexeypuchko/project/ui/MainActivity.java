@@ -2,6 +2,7 @@ package com.alexeypuchko.project.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 
 import com.alexeypuchko.project.R;
 import com.google.android.gms.maps.GoogleMap;
@@ -18,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setUpMapIfNeeded();
+        setUpToolbar();
     }
 
     @Override
@@ -51,6 +53,13 @@ public class MainActivity extends ActionBarActivity {
             if (mMap != null) {
                 setUpMap();
             }
+        }
+    }
+
+    private void setUpToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            setSupportActionBar(toolbar);
         }
     }
 
