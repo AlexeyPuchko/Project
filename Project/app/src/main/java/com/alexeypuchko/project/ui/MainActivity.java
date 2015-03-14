@@ -3,6 +3,7 @@ package com.alexeypuchko.project.ui;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 
 import com.alexeypuchko.project.R;
 import com.google.android.gms.maps.GoogleMap;
@@ -26,6 +27,13 @@ public class MainActivity extends ActionBarActivity {
     protected void onResume() {
         super.onResume();
         setUpMapIfNeeded();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+
+        return true;
     }
 
     /**

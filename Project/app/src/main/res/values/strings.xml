@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Project</string>
     <string name="title_activity_main">Map</string>
+
+   <!--Menu-->
+
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_sign_up">Sign Up</string>
+
 </resources>
